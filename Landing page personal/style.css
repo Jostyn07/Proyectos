@@ -1,6 +1,6 @@
 :root {
-    --Azul-palido: #EFFAFD;
-    --azul-real: #4A8BDF;
+    --Azul-palido: #E3E7AF20;
+    --azul-real: #99E1D9;
     --berenjena: #A0006D;
     --texto-body: #fff;
     --texto-titulo: #000;
@@ -16,7 +16,159 @@
 
 body {
     background-color: var(--Azul-palido);
-    font-family: 'IBM Plex Serif ', sans-serif;
+    font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.logo {
+    width: 80px; 
+    border-radius: 50%;
+}
+
+.nav a {
+    text-align: center;
+    padding: 8px 16px;
+    transition: background 0.5s;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.nav a:hover {
+    background-color: var(--azul-real);
+}
+
+.presentacionPersonal {
+    display: flex;
+    justify-content: space-around;
+    color: var(--berenjena);
+    align-items: center;
+}
+
+.nombre-carrera {
+    text-align: center;
+}
+
+.nombre-carrera p {
+    font-size: 24px
+}
+
+.content-whatsapp {
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #705D56;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 8px;
+    transition: all 1s;
+    width: 170px;
+}
+
+.whatsapp:hover {
+    border: 1px solid #272f7a;
+}
+
+
+.text-sobre-mi {
+    font-style: "Marriweather";
+    max-width: 60ch;
+    line-height: 30px;
+}
+.c-title>h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.content-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 256px;
+    justify-self: center;
+}
+
+.sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 270px;
+    max-height: 270px;
+    border: 1px solid #272f7a10;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.cuadrado:hover {
+    transform: translateY(-2px) translateX(2px);
+    box-shadow: 0 4px 8px #3332;
+}
+
+.cuadrado img {
+    width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.javaScript img {
+    height: 270px;
+    width: 270px;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #272f7a;
+    padding: 0px 8px;
+    color: #aaa;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: #000;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+.contactos {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.contactos .linkeding:hover {
+    background: #0077b5;
+    color: #fff;
+}
+
+.contactos .redict:hover {
+    background: #ff4500;
+    color: #fff;
+
+}
+
+.contactos .github:hover {
+    background: #000;
+    color: #fff;
 }
 
 @media (width < 720px) {
@@ -44,39 +196,5 @@ body {
         border-bottom: 1px solid var(--azul-real);
         margin-bottom : 16px;
     }
-}
-
-.nav a {
-    text-align: center;
-    background-color: var(--Azul-palido);
-    padding: 8px 16px;
-    color: var(--azul-real);
-    transition: background .4s ease;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    background-color: var(--azul-real);
-    color: var(--Azul-palido);
-}
-
-.logo {
-    width: 80px; 
-    border-radius: 50%;
-}
-
-.presentacionPersonal {
-    display: flex;
-    justify-content: space-around;
-    color: var(--berenjena);
-    align-items: center;
-}
-
-.nombre-carrera {
-    text-align: center;
-}
-
-.nombre-carrera p {
-    font-size: 24px
 }
 
